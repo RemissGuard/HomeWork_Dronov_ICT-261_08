@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+п»ї#define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<locale.h>
 #include<math.h>
@@ -7,13 +7,18 @@ int main()
 {
     setlocale(LC_CTYPE, "RUS");
     int n;
-    double x, y;
-    puts("Введите значение x");
+    double x, y, z;
+    z = x;
+    puts("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ x");
     scanf("%lf", &x);
     y = sin(x);
     printf("sin(x)=%lf\n", y);
-    puts("Введите значение n");
+    puts("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ n");
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)y += sin(y);// контрольный пример при x=1.57 и n=0 y=1
+    for (int i = 0; i < n; i++)
+    {
+        z = sin(z);// РєРѕРЅС‚СЂРѕР»СЊРЅС‹Р№ РїСЂРёРјРµСЂ РїСЂРё x=1.57 Рё n=0 y=1
+        y += z;
+    }
     printf("%lf", y);
 }
