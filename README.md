@@ -32,8 +32,7 @@ printf("%lf", y);
 
 ### БЛОК-СХЕМА
 
-<img width="692" height="522" alt="Диаграмма без названия drawio (3)" src="https://github.com/user-attachments/assets/579b38d0-8d48-4d5f-8455-dcd86ed08bcc" />
-
+<img width="692" height="522" alt="Диаграмма без названия drawio (3) drawio" src="https://github.com/user-attachments/assets/118f8fac-ea39-4f19-ba65-4db0944e6008" />
 
 ## **2. Реализация программы**
 ```
