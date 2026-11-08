@@ -11,7 +11,6 @@ int main()
     z = x;
     puts("Введите значение x");
     scanf("%lf", &x);
-    y = sin(x);
     printf("sin(x)=%lf\n", y);
     puts("Введите значение n");
     scanf("%d", &n);
