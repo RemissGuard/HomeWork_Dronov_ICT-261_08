@@ -25,14 +25,18 @@ puts("Введите значение n");
 8. Принять введенное значение переменной n:
 scanf("%d", &n);
 9. Используя цикл for прибавлять к переменной y ее предыдущее значение, пока i<=n:
-for (int i = 1; i <= n; i++)y += sin(y);
+for (int i = 0; i < n; i++)
+{
+    z = sin(z);
+    y += z;
+}
 10. Вывести конечный результат:
 printf("%lf", y);
 11. Конец
 
 ### БЛОК-СХЕМА
 
-<img width="692" height="522" alt="Диаграмма без названия drawio (3) drawio" src="https://github.com/user-attachments/assets/118f8fac-ea39-4f19-ba65-4db0944e6008" />
+<img width="692" height="522" alt="Диаграмма без названия drawio (3) drawio (1)" src="https://github.com/user-attachments/assets/253a3370-628e-4460-8738-8523d8d8084b" />
 
 ## **2. Реализация программы**
 ```
@@ -45,15 +49,20 @@ int main()
 {
     setlocale(LC_CTYPE, "RUS");
     int n;
-    double x, y;
+    double x, y, z;
+    z = x;
     puts("Введите значение x");
     scanf("%lf", &x);
-    y = sin(x);
     printf("sin(x)=%lf\n", y);
     puts("Введите значение n");
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)y += sin(y);// контрольный пример при x=1.57 и n=0 y=1
+    for (int i = 0; i < n; i++)
+    {
+        z = sin(z);// контрольный пример при x=1.57 и n=0 y=1
+        y += z;
+    }
     printf("%lf", y);
+}
 }
 ```
 	
